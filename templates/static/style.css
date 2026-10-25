@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #eef2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #1f2937;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    background: #4338ca;
+    color: white;
+}
+
+.logo {
+    font-size: 35px;
+}
+
+header h1 {
+    margin: 0 0 5px;
+    font-size: 22px;
+}
+
+header p {
+    margin: 0;
+    font-size: 13px;
+    color: #e0e7ff;
+}
+
+.status {
+    margin-left: auto;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+main {
+    padding: 22px;
+}
+
+.welcome h2 {
+    margin-bottom: 8px;
+}
+
+.welcome p {
+    color: #64748b;
+    line-height: 1.5;
+}
+
+#chat-box {
+    height: 300px;
+    overflow-y: auto;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.message {
+    width: fit-content;
+    max-width: 85%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 14px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.bot {
+    background: #f1f5f9;
+    margin-right: auto;
+}
+
+.user {
+    background: #4338ca;
+    color: white;
+    margin-left: auto;
+}
+
+.suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.suggestions button {
+    border: 1px solid #c7d2fe;
+    color: #4338ca;
+    background: white;
+    border-radius: 20px;
+    padding: 9px 12px;
+    cursor: pointer;
+}
+
+.suggestions button:hover {
+    background: #eef2ff;
+}
+
+#chat-form {
+    display: flex;
+    gap: 10px;
+}
+
+#message {
+    flex: 1;
+    min-width: 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 13px;
+    font-size: 15px;
+}
+
+#send-button {
+    border: none;
+    border-radius: 10px;
+    background: #4338ca;
+    color: white;
+    padding: 12px 18px;
+    cursor: pointer;
+}
+
+#send-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.footer {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 12px;
+    margin: 22px 0 0;
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 15px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    #chat-box {
+        height: 280px;
+    }
+
+    #send-button {
+        padding: 10px;
+    }
+}
